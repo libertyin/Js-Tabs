@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url("../img/background.jpg") center no-repeat / cover;
+    font-family: "Lato", serif;
+}
+
+.grid  {
+    margin: 0 auto;
+    width: 600px;
+}
+
+.information {
+    margin-top: 150px;
+    background-color: #212534;
+    box-shadow: 0 0 23px rgba(0,0,0,0.5);
+}
+
+.information__nav {
+    background-color: #2b3040;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px 0px;
+    text-align: center;
+
+}
+
+.information__text-nav {
+    display: block;
+    padding-bottom: 5px;
+}
+
+.information__item {
+    position: relative;
+    text-transform: uppercase;
+    font-weight: 3b7bacd00;
+    color: #b7bacd;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.information__item:hover {
+    color: #fbfbfb;
+}
+
+.information__item:hover:after,
+.js-tab.active:after{
+    background-color: #fbfbfb;;
+}
+
+.information__item::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    left: 0;
+    bottom: -30px;
+    background-color: transparent;
+}
+
+.information__container {
+    padding: 60px 50px;
+    display: flex;
+}
+
+.information__icon {
+    margin-right: 40px;
+}
+
+.information__text {
+    
+}
+
+.information__title {
+    padding-bottom: 30px;
+}
+
+.information__title h3 {
+    font-weight: 500;
+    color: #fff;
+    font-size: 32px;
+}
+
+.information__title span {
+
+    color: #fdfdfd;
+    font-size: 14px;
+}
+
+.information__description {
+    padding-bottom: 50px;
+}
+
+.information__description p {
+    color: #b7bacd;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.information__sale {
+    display: flex;
+    justify-content: space-between;
+}
+
+.information__discount {
+    display: block;
+    font-size: 12px;
+    color: #fedc3f;
+}
+
+.information__price {
+    font-size: 32px;
+    color: #ffff;
+}
+
+.information__btn {
+    display: block;
+    cursor: pointer;
+    background-color: #13e28d;
+    padding: 20px 30px;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.information__btn:hover {
+    background-color: #21ac72;
+}
+
+.js-tabcontent {
+    display: none;
+}
+
+.contant .active {
+    display: block;
+}
