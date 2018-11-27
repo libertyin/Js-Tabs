@@ -64,12 +64,33 @@ body {
 }
 
 .information__container {
+    height: 400px;
     padding: 60px 50px;
     display: flex;
 }
 
+
 .information__icon {
     margin-right: 40px;
+}
+
+.information__img {
+    box-shadow: 0 0 10px rgba(0,0,0,0.7);
+    margin-bottom: 25px;
+}
+
+.information__rate {
+    justify-content: center;
+    display: flex;
+}
+
+.information__star {
+    color: #4b526b;
+}
+
+.information__star.active {
+
+    color: #ffdd3f;
 }
 
 .information__text {
@@ -78,6 +99,7 @@ body {
 
 .information__title {
     padding-bottom: 30px;
+    display: flex;
 }
 
 .information__title h3 {
@@ -90,6 +112,30 @@ body {
 
     color: #fdfdfd;
     font-size: 14px;
+}
+
+.information__rate2 {
+    position: relative;
+}
+
+.information__name {
+    margin-right: 40px;
+}
+
+.information__circle {
+    position: absolute;
+    top: -10px;
+    border: 2px solid #4b526b;
+    border-radius: 50%;
+
+}
+
+
+.information__circle span {
+    color: #848aa1;
+    font-size: 24px;
+    display: block;
+    padding: 20px;
 }
 
 .information__description {
